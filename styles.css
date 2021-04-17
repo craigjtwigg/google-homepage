@@ -183,11 +183,15 @@
       width: 100%;
     }
 
-    .country {
+    .uk {
+      display: inline-grid;
       grid-column: 1;
       grid-row: 1;
-      align-self: center;
+      align-items: center;
+      justify-items: left;
+      padding-left: 30px;
       margin-left: 20px;
+      margin-top: 5px;
     }
 
     .bottom-left-links {
