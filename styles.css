@@ -1,0 +1,215 @@
+
+   * {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: Roboto, Arial, sans-serif }
+
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+        src: local('Material Icons'),
+          local('MaterialIcons-Regular'),
+          url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+          url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+          url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+      }
+
+      .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;  /* Preferred icon size */
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+      
+        /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+        /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+      
+        /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+      
+        /* Support for IE. */
+        font-feature-settings: 'liga';
+      }
+
+      .top {
+        display: grid;
+        box-sizing: border-box;
+        position: static;
+        grid-template-columns: 1fr 1fr;
+        padding: 6px;
+        height: 60px;
+    }
+
+    li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .top-left-links, a {
+      justify-self: left;
+      align-self: center;
+      font-size: 14px;
+
+      color: #222;
+      padding: 5px;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a.top-left-links: :first-of-type {
+      margin-left: 15px;
+    }
+
+    .top-right-links {
+      display: flex;
+      align-self: center;
+      justify-self: right;
+      text-align: right;
+    }
+
+   span {
+     align-self: center;
+   }
+
+   .profile {
+     height: 32px;
+     width: 32px;
+     align-self: center;
+     margin-left: 1rem;
+     border-radius: 16px;
+   }
+
+    .main-grid {
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 50px 50px;
+      margin: auto;
+      padding: 10px;
+      gap: 20px;
+      width: 700px;
+    }
+
+    .logo-container {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      grid-column: 2 / 4;
+      grid-row: 1;
+    }
+
+    .glass {
+      display: block;
+      grid-column: 1;
+      grid-row: 2;
+      margin-left: 30px;
+      margin-top: 12px;
+      z-index: 2;
+      color: #9aa0a6
+    }
+
+    .search-bar-container {
+      grid-column: 1 / 5;
+      grid-row: 2;
+    }
+
+    .search-bar {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0.25rem 50px;
+      height: 2.5rem;
+      border: 1px solid #dfe1e5;
+      border-radius: 2rem;
+      width: 80%;
+      
+    }
+
+    .search-bar:hover {
+      box-shadow: 1px 1px 5px #9aa0a6;
+    }
+
+    textarea:focus, input:focus{
+      outline: none;
+  }
+
+    .button-container {
+      grid-column: 2/4;
+      grid-row: 3;
+      justify-self: center;
+      align-self: start;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 0 5px;
+      background-color: #f8f9fa;
+      border-style: none;
+      border-radius: 4px;
+      border: transparent 1px;
+      font-size: 14px;
+    }
+
+    button:hover {
+      border: solid 1px #9aa0a6;
+      box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    }
+
+    .bottom-container {
+      display: grid;
+      box-sizing: border-box;
+      justify-content: space-between;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50px;
+      background-color: #f2f2f2;
+      position: fixed;
+      bottom: 0px;
+      left: 0px;
+      width: 100%;
+    }
+
+    .country {
+      grid-column: 1;
+      grid-row: 1;
+      align-self: center;
+      margin-left: 20px;
+    }
+
+    .bottom-left-links {
+      grid-column: 1;
+      grid-row: 2;
+      align-self: center;
+    }
+      
+    .bottom-center-links {
+      grid-column: 2;
+      grid-row: 2;
+      justify-self: center;
+      align-self: center;
+    }
+
+    .bottom-right-links {
+      grid-column: 3;
+      grid-row: 2;
+      justify-self: right;
+      align-self: center;
+    }
+
+    .leaf {
+      height: 15px;
+    }
